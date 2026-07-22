@@ -8,13 +8,11 @@ def main():
     
     password(members)
     
-    while change_passcode != 'Y':
-        try:
-            change_passcode = input("Change password (Y/N): ").upper()
-            change_password(members)
-            break
-        except ValueError:
-            print("Invalid input. Y for yes and N for no.")
+    change_passcode = input("Change password (Y/N): ").upper()
+    if change_passcode == 'Y':
+        change_password(members)
+    else:
+        pass
 
 
 def password(MEMBERS):
