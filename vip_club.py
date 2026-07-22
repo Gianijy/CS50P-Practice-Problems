@@ -11,8 +11,10 @@ def main():
     change_passcode = input("Change password (Y/N): ").upper()
     if change_passcode == 'Y':
         change_password(members)
+    elif change_passcode == 'N':
+        return
     else:
-        pass
+        print("Invalid input. Y for yes and N for no.")
 
 
 def password(MEMBERS):
