@@ -63,7 +63,7 @@ def main():
         again = input("\nWould you like to do another transaction? (Y/N): ").upper()
         if again != "Y":
             print("Thank you for banking with Eastwest Bank. Goodbye!")
-            break # This shatters the giant loop and ends the program!     
+            break    
     
 
 def welcome_message():
